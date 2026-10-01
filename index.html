@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2B Estética Automotiva · Jardim Japão, SP</title>
+<meta name="description" content="Lavação detalhada, higienização, coating cerâmico e PPF no Jardim Japão, São Paulo. Credenciado profissional Carpro. Nota 5,0 no Google. Agende pelo WhatsApp (11) 96100-0111.">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --graphite:#121214;
+  --asphalt:#1c1d20;
+  --steel:#8b8e95;
+  --chalk:#ecebe6;
+  --signal:#f5c518;
+  --signal-deep:#d9a90a;
+  --led:#f4f8ff;
+  --line:rgba(236,235,230,.12);
+  --display:"Big Shoulders Display",Impact,sans-serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --wrap:min(1240px,100% - 32px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--graphite);color:var(--chalk);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(18,18,20,.88);backdrop-filter:blur(12px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:48px;height:48px;border-radius:50%;border:1px solid rgba(245,197,24,.4)}
+.brand b{font:800 22px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.brand small{display:block;font:500 10px/1.2 var(--mono);letter-spacing:.14em;color:var(--signal);text-transform:uppercase;margin-top:3px}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{color:rgba(236,235,230,.75);transition:color .2s}
+.nav ul a:hover{color:var(--signal)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15px/1 var(--body);padding:15px 22px;border-radius:999px;transition:transform .2s,background .2s,color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-signal{background:var(--signal);color:#111}
+.btn-signal:hover{background:#ffd43a;transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(236,235,230,.3)}
+.btn-ghost:hover{border-color:var(--chalk);transform:translateY(-2px)}
+.nav .btn{padding:12px 18px;font-size:14px}
+
+/* ---------- hero: hex inspection light ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 72px;overflow:hidden;isolation:isolate}
+.hex{position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='48.5'%3E%3Cpath d='M0 24.25L14 0h28l14 24.25L42 48.5H14zM56 24.25h28' fill='none' stroke='%23f4f8ff' stroke-width='2.2'/%3E%3C/svg%3E");
+  background-size:84px 48.5px}
+.hex.base{opacity:.05}
+.hex.glow{opacity:.85;filter:drop-shadow(0 0 6px rgba(244,248,255,.9));
+  -webkit-mask:radial-gradient(260px circle at var(--mx,70%) var(--my,30%),#000 0,rgba(0,0,0,.35) 45%,transparent 72%);
+          mask:radial-gradient(260px circle at var(--mx,70%) var(--my,30%),#000 0,rgba(0,0,0,.35) 45%,transparent 72%)}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:40%;z-index:-1;background:linear-gradient(transparent,var(--graphite))}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--signal)}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--signal)}
+.hero h1{font:900 clamp(50px,6.6vw,100px)/.92 var(--display);text-transform:uppercase;letter-spacing:-.005em;margin:22px 0 26px}
+.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--chalk)}
+.hero h1 .y{color:var(--signal)}
+.hero p.lead{max-width:520px;font-size:19px;color:rgba(236,235,230,.78)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.facts{display:flex;flex-wrap:wrap;gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.facts div{padding:18px 22px 0 0;margin-right:22px;border-right:1px solid var(--line)}
+.facts div:last-child{border:0}
+.facts strong{display:block;font:800 28px/1 var(--display);letter-spacing:.02em}
+.facts span{color:var(--steel);font-size:14px;white-space:nowrap}
+.hero figure{position:relative}
+.hero figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:20px;box-shadow:0 40px 80px -30px #000}
+.hero figcaption{position:absolute;left:-28px;bottom:36px;background:var(--graphite);border:1px solid var(--line);border-left:3px solid var(--signal);padding:14px 18px;border-radius:10px;max-width:270px}
+.hero figcaption b{display:block;font:800 22px/1.05 var(--display);text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px}
+.hero figcaption span{color:var(--steel);font-size:11px;line-height:1.6}
+
+/* ---------- floor-grid divider (the yellow drive-on tiles) ---------- */
+.floor{height:34px;background-color:#0a0a0b;
+  background-image:linear-gradient(90deg,var(--signal) 0 5px,transparent 5px),linear-gradient(var(--signal) 0 5px,transparent 5px),linear-gradient(45deg,transparent 46%,rgba(245,197,24,.45) 46% 54%,transparent 54%);
+  background-size:34px 34px;opacity:.92}
+
+/* ---------- sections ---------- */
+section{padding:120px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+.head h2{font:900 clamp(44px,6vw,84px)/.9 var(--display);text-transform:uppercase;margin-top:14px;max-width:760px}
+.head p{max-width:400px;color:rgba(236,235,230,.7)}
+
+/* services (light "chalk" room) */
+.services{background:var(--chalk);color:var(--graphite)}
+.services .eyebrow{color:#8a6b00}.services .eyebrow::before{background:#8a6b00}
+.services .head p{color:#4a4b50}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid #dddbd3;transition:transform .3s,box-shadow .3s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(0,0,0,.35)}
+.svc img{aspect-ratio:4/3.4;object-fit:cover;width:100%}
+.svc .body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.svc h3{font:800 32px/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.svc p{font-size:15px;color:#4a4b50}
+.svc ul{list-style:none;margin-top:auto;padding-top:10px;border-top:1px dashed #cfccc2;display:grid;gap:6px}
+.svc li{font:500 12px/1.4 var(--mono);letter-spacing:.04em;color:#2a2b2f;display:flex;gap:8px}
+.svc li::before{content:"";width:7px;height:7px;background:var(--signal);margin-top:4px;flex:none;transform:rotate(45deg)}
+.extras{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.extras .mono{color:#6b6c72;margin-right:6px}
+.chip{border:1px solid #c9c6bb;border-radius:999px;padding:8px 14px;font-size:14px;font-weight:500;background:transparent}
+.carpro{margin-top:56px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--graphite);color:var(--chalk);border-radius:18px;padding:28px 32px}
+.carpro .mark{font:900 44px/1 var(--display);letter-spacing:.02em;text-transform:lowercase}
+.carpro .mark span{color:var(--signal)}
+.carpro p{color:rgba(236,235,230,.75);max-width:620px}
+
+/* garage / portfolio as work orders */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--chalk);background:transparent;border:1px solid var(--line);padding:12px 16px;border-radius:999px;cursor:pointer;transition:all .2s}
+.filters button:hover{border-color:var(--steel)}
+.filters button[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:#111}
+.garage{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.wo{position:relative;border-radius:16px;overflow:hidden;background:var(--asphalt);transition:opacity .35s,transform .35s}
+.wo.hide{display:none}
+.wo .ph{overflow:hidden;aspect-ratio:3/4}
+.wo img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.wo:hover img{transform:scale(1.05)}
+.wo .tag{position:absolute;top:12px;left:12px;background:rgba(18,18,20,.8);backdrop-filter:blur(6px);padding:6px 10px;border-radius:6px;font-size:10px}
+.wo .info{position:absolute;inset:auto 0 0;padding:60px 18px 18px;background:linear-gradient(transparent,rgba(10,10,11,.95) 55%)}
+.wo h3{font:800 28px/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.wo .ops{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.wo .ops span{font:500 10.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:6px 8px;border:1px solid rgba(245,197,24,.45);color:var(--signal);border-radius:4px}
+.wo.wide{grid-column:span 2}
+.wo.wide .ph{aspect-ratio:auto;position:absolute;inset:0}
+.ig-more{margin-top:40px;display:flex;justify-content:center}
+
+/* reviews */
+.reviews{background:var(--asphalt);position:relative;overflow:hidden}
+.score{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.big{margin-top:22px;font:900 clamp(96px,15vw,200px)/.8 var(--display);color:var(--signal);letter-spacing:-.01em}
+.stars-lg{color:var(--signal);font-size:34px;letter-spacing:.12em;margin-top:14px}
+.stars{color:var(--signal);font-size:.6em;letter-spacing:.06em;vertical-align:.15em}
+.big ~ p{margin-top:18px;font-size:19px;max-width:360px;color:rgba(236,235,230,.8)}
+.quotes{display:grid;gap:16px}
+blockquote{background:var(--graphite);border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+blockquote p{font:600 24px/1.25 var(--body);letter-spacing:-.01em}
+blockquote footer{margin-top:14px;color:var(--steel);display:flex;align-items:center;gap:10px}
+blockquote footer::before{content:"";width:18px;height:2px;background:var(--signal)}
+
+/* visit */
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.visit .photo{border-radius:18px;overflow:hidden;min-height:520px;position:relative}
+.visit .photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.card{background:var(--asphalt);border:1px solid var(--line);border-radius:18px;padding:34px;display:flex;flex-direction:column;gap:26px}
+.card dl{display:grid;gap:22px}
+.card dt{color:var(--signal);margin-bottom:6px}
+.card dd{font-size:20px;font-weight:500}
+.card dd a:hover{color:var(--signal)}
+.map{border-radius:14px;overflow:hidden;flex:1;min-height:240px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:240px;border:0;filter:grayscale(.6) contrast(1.05)}
+
+/* final cta */
+.final{padding:110px 0;text-align:center;position:relative;overflow:hidden;isolation:isolate}
+.final h2{font:900 clamp(52px,9vw,140px)/.85 var(--display);text-transform:uppercase}
+.final h2 span{color:var(--signal)}
+.final p{margin:24px auto 36px;max-width:520px;color:rgba(236,235,230,.75)}
+.final .cta-row{justify-content:center}
+
+footer.site{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--steel);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site a:hover{color:var(--signal)}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.6);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .garage{grid-template-columns:repeat(3,1fr)}
+  .wo.wide{grid-column:span 1}.wo.wide .ph{aspect-ratio:3/4;position:static}
+}
+@media (max-width:860px){
+  .nav ul{display:none}
+  .hero .wrap,.score,.visit .grid{grid-template-columns:1fr}
+  .hero{padding-top:110px}
+  .hero figure{max-width:440px}
+  .hero figcaption{left:12px}
+  .garage{grid-template-columns:repeat(2,1fr);gap:12px}
+  .carpro{grid-template-columns:1fr}
+  .visit .photo{min-height:380px}
+  section{padding:84px 0}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .svc-grid{grid-template-columns:1fr}
+  .nav .btn span{display:none}
+  .nav .btn{padding:12px}
+  .brand small{display:none}
+  .facts div{padding-right:18px;margin-right:18px}
+  .facts strong{font-size:26px}
+  .wo h3{font-size:22px}
+  .wo .info{padding:40px 12px 12px}
+  .wo .ops span{font-size:9.5px}
+  blockquote p{font-size:20px}
+  .card{padding:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="2B Estética Automotiva, início">
+      <img src="img/logo.jpg" alt="">
+      <div><b>2B Estética</b><small>Automotiva · SP</small></div>
+    </a>
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#garagem">Trabalhos</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#visite">Endereço</a></li>
+    </ul>
+    <a class="btn btn-signal" href="https://wa.me/5511961000111?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20um%20servi%C3%A7o." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></svg>
+      <span>Agendar</span>
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-labelledby="h1">
+    <div class="hex base" aria-hidden="true"></div>
+    <div class="hex glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow mono">Jardim Japão · São Paulo</span>
+        <h1 id="h1">Cuidar do seu carro vai <em>muito além</em> de <span class="y">lavar.</span></h1>
+        <p class="lead">Lavação detalhada, higienização interna, coating cerâmico e PPF feitos à mão, com produtos Carpro e atenção a cada detalhe — do chassi à capota.</p>
+        <div class="cta-row">
+          <a class="btn btn-signal" href="https://wa.me/5511961000111?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            Pedir orçamento no WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#garagem">Ver carros que passaram por aqui</a>
+        </div>
+        <div class="facts">
+          <div><strong>5,0 <span class="stars" aria-hidden="true">★★★★★</span></strong><span>5.036 avaliações no Google</span></div>
+          <div><strong>Carpro</strong><span>credenciado profissional</span></div>
+          <div><strong>Até 19h</strong><span>horário de fechamento</span></div>
+        </div>
+      </div>
+      <figure class="rv">
+        <img src="img/ferrari-f8-spider.jpg" alt="Ferrari F8 Spider preta dentro do box da 2B, sob as luzes hexagonais" fetchpriority="high">
+        <figcaption>
+          <b>Ferrari F8 Spider</b>
+          <span class="mono">Full detail · película solar · calibragem dos sensores de roda</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="floor" aria-hidden="true"></div>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos" aria-labelledby="sv-t">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow mono">O que fazemos</span>
+          <h2 id="sv-t">Do primeiro banho à proteção de anos</h2>
+        </div>
+        <p>Cada carro chega com uma necessidade. A gente avalia, explica o que vale a pena e só então começa o trabalho.</p>
+      </div>
+
+      <div class="svc-grid">
+        <article class="svc rv">
+          <img src="img/toyota-sw4.jpg" alt="Toyota SW4 prata após lavação no box da 2B" loading="lazy">
+          <div class="body">
+            <h3>Lavagens</h3>
+            <p>Lavação detalhada por fora e por baixo, onde a sujeira de verdade se esconde.</p>
+            <ul><li>Lavação detalhada</li><li>Lavagem de chassi</li><li>Limpeza do motor</li><li>Descontaminação dos vidros</li></ul>
+          </div>
+        </article>
+        <article class="svc rv">
+          <img src="img/higienizacao-interna.jpg" alt="Interior de T-Cross desmontado para higienização" loading="lazy">
+          <div class="body">
+            <h3>Higienização</h3>
+            <p>Bancos, carpetes e forros limpos de verdade — com desmontagem quando precisa.</p>
+            <ul><li>Higienização interna</li><li>Tratamento de couro e plásticos</li><li>Vitrificação de couro</li><li>Coating de bancos</li></ul>
+          </div>
+        </article>
+        <article class="svc rv">
+          <img src="img/vw-saveiro.jpg" alt="Saveiro preta com o capô refletindo as luzes hexagonais após coating" loading="lazy">
+          <div class="body">
+            <h3>Coating cerâmico</h3>
+            <p>Vitrificação com a linha profissional Carpro: brilho profundo e água que escorre sozinha.</p>
+            <ul><li>Coating de 1 a 3 anos</li><li>Linha fechada Carpro</li><li>Correção de verniz</li><li>Cristalização dos vidros</li></ul>
+          </div>
+        </article>
+        <article class="svc rv">
+          <img src="img/ppf-aplicacao.jpg" alt="Aplicação de PPF no aerofólio de um Porsche 911 Turbo" loading="lazy">
+          <div class="body">
+            <h3>PPF</h3>
+            <p>Película de proteção de pintura contra pedra, risco e o dia a dia de São Paulo.</p>
+            <ul><li>Full PPF Immortal</li><li>Aplicação sem emenda</li><li>Concha e quina das portas</li><li>PPF parcial</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="extras rv">
+        <span class="mono">Também fazemos</span>
+        <span class="chip">Restauração de farol</span>
+        <span class="chip">Impermeabilização de capota</span>
+        <span class="chip">Pintura de pinças de freio</span>
+        <span class="chip">Película solar</span>
+        <span class="chip">Tratamento de chassi</span>
+      </div>
+
+      <div class="carpro rv">
+        <div class="mark">car<span>pro</span></div>
+        <p>A 2B é <strong>credenciada profissional Carpro</strong>, com acesso à linha fechada de coatings da marca — produtos que só aplicadores certificados podem usar.</p>
+        <a class="btn btn-signal" href="https://wa.me/5511961000111?text=Ol%C3%A1%2C%20quero%20saber%20sobre%20coating%20Carpro." target="_blank" rel="noopener">Perguntar sobre coating</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="floor" aria-hidden="true"></div>
+
+  <!-- GARAGEM -->
+  <section id="garagem" aria-labelledby="gr-t">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow mono">Passaram pelo nosso box</span>
+          <h2 id="gr-t">De Willys 1952 a Ferrari F8</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar trabalhos por serviço">
+          <button aria-pressed="true" data-f="all">Todos</button>
+          <button aria-pressed="false" data-f="ppf">PPF</button>
+          <button aria-pressed="false" data-f="coating">Coating</button>
+          <button aria-pressed="false" data-f="higi">Higienização</button>
+          <button aria-pressed="false" data-f="lav">Lavação</button>
+        </div>
+      </div>
+
+      <div class="garage" id="garage">
+        <article class="wo wide rv" data-c="ppf coating">
+          <div class="ph"><img src="img/porsche-911-turbo.jpg" alt="Porsche 911 Turbo branco no box da 2B" loading="lazy"></div>
+          <span class="tag mono">PPF + Coating</span>
+          <div class="info"><h3>Porsche 911 Turbo</h3><div class="ops"><span>Full PPF Immortal</span><span>Coating professional Carpro</span></div></div>
+        </article>
+        <article class="wo rv" data-c="ppf coating">
+          <div class="ph"><img src="img/mercedes-gle450d.jpg" alt="Mercedes GLE 450d prata de frente" loading="lazy"></div>
+          <div class="info"><h3>Mercedes GLE 450d</h3><div class="ops"><span>Full PPF Immortal</span><span>Coating</span></div></div>
+        </article>
+        <article class="wo rv" data-c="lav">
+          <div class="ph"><img src="img/bmw-m3.jpg" alt="BMW M3 vermelha com faróis acesos" loading="lazy"></div>
+          <div class="info"><h3>BMW M3</h3><div class="ops"><span>Lavação detalhada</span></div></div>
+        </article>
+        <article class="wo rv" data-c="">
+          <div class="ph"><img src="img/jeep-willys-1952.jpg" alt="Jeep Willys 1952 verde dentro da loja, com o logo 2B na parede" loading="lazy"></div>
+          <div class="info"><h3>Jeep Willys 1952</h3><div class="ops"><span>Único dono</span><span>36 mil km</span></div></div>
+        </article>
+        <article class="wo rv" data-c="lav">
+          <div class="ph"><img src="img/corvette.jpg" alt="Corvette vermelho sobre o piso amarelo e preto" loading="lazy"></div>
+          <div class="info"><h3>Corvette</h3><div class="ops"><span>Lavação detalhada</span></div></div>
+        </article>
+        <article class="wo rv" data-c="ppf higi">
+          <div class="ph"><img src="img/mercedes-gla200.jpg" alt="Mercedes GLA 200 branca" loading="lazy"></div>
+          <div class="info"><h3>Mercedes GLA 200</h3><div class="ops"><span>Full PPF externo</span><span>Higienização interna</span></div></div>
+        </article>
+        <article class="wo rv" data-c="higi coating">
+          <div class="ph"><img src="img/porsche-911-cabrio.jpg" alt="Porsche 911 conversível prata" loading="lazy"></div>
+          <div class="info"><h3>Porsche 911 Turbo</h3><div class="ops"><span>Higienização</span><span>Vitrificação de couro</span><span>Vitrificação de capota</span></div></div>
+        </article>
+        <article class="wo rv" data-c="coating">
+          <div class="ph"><img src="img/bmw-135i.jpg" alt="BMW 135i branca refletindo as luzes do teto" loading="lazy"></div>
+          <div class="info"><h3>BMW 135i</h3><div class="ops"><span>Coating cerâmico</span></div></div>
+        </article>
+        <article class="wo rv" data-c="ppf coating">
+          <div class="ph"><img src="img/hyundai-creta.jpg" alt="Hyundai Creta branco" loading="lazy"></div>
+          <div class="info"><h3>Hyundai Creta</h3><div class="ops"><span>Full PPF</span><span>Full coating Carpro</span></div></div>
+        </article>
+        <article class="wo rv" data-c="">
+          <div class="ph"><img src="img/porsche-911-carrera-t.jpg" alt="Porsche 911 Carrera T verde" loading="lazy"></div>
+          <div class="info"><h3>Porsche 911 Carrera T</h3><div class="ops"><span>Cliente da casa</span></div></div>
+        </article>
+        <article class="wo rv" data-c="lav">
+          <div class="ph"><img src="img/mercedes-cla45.jpg" alt="Mercedes CLA 45 AMG vermelha" loading="lazy"></div>
+          <div class="info"><h3>Mercedes CLA 45</h3><div class="ops"><span>Lavação detalhada</span></div></div>
+        </article>
+        <article class="wo rv" data-c="lav">
+          <div class="ph"><img src="img/bmw-x6.jpg" alt="BMW X6 branca" loading="lazy"></div>
+          <div class="info"><h3>BMW X6</h3><div class="ops"><span>Lavação detalhada</span></div></div>
+        </article>
+        <article class="wo rv" data-c="higi lav">
+          <div class="ph"><img src="img/renault-duster.jpg" alt="Renault Duster cinza no box" loading="lazy"></div>
+          <div class="info"><h3>Renault Duster</h3><div class="ops"><span>Higienização interna</span><span>Lavação detalhada</span></div></div>
+        </article>
+        <article class="wo rv" data-c="ppf">
+          <div class="ph"><img src="img/porsche-911-ppf.jpg" alt="Porsche 911 preto com reflexo das luzes hexagonais no capô" loading="lazy"></div>
+          <div class="info"><h3>Porsche 911</h3><div class="ops"><span>Full detail</span><span>Full PPF Immortal</span></div></div>
+        </article>
+        <article class="wo rv" data-c="coating">
+          <div class="ph"><img src="img/vidros-cristalizacao.jpg" alt="Frasco de produto para cristalização de vidros" loading="lazy"></div>
+          <div class="info"><h3>VW T-Cross</h3><div class="ops"><span>Descontaminação</span><span>Cristalização dos vidros</span></div></div>
+        </article>
+      </div>
+
+      <div class="ig-more">
+        <a class="btn btn-ghost" href="https://www.instagram.com/2bestetica/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Mais trabalhos no @2bestetica
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="reviews" id="avaliacoes" aria-labelledby="rv-t">
+    <div class="wrap score">
+      <div class="rv">
+        <span class="eyebrow mono">Google · nota 5,0</span>
+        <h2 id="rv-t" class="big">5,0</h2>
+        <div class="stars-lg" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <p>Nota máxima em 5.036 avaliações de clientes no Google. Algumas delas, nas palavras de quem já deixou o carro com a gente:</p>
+      </div>
+      <div class="quotes">
+        <blockquote class="rv"><p>“Lugar top, produtos de qualidade e o melhor, carinho com seu carro!”</p><footer class="mono">Bruno Zicari</footer></blockquote>
+        <blockquote class="rv"><p>“Atendimento bacana, loja organizada e serviço top.”</p><footer class="mono">Eduardo Figueiredo Maciel</footer></blockquote>
+        <blockquote class="rv"><p>“Já experimentei outras e certamente essa é o melhor custo-benefício.”</p><footer class="mono">Marco Aurélio</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISITE -->
+  <section class="visit" id="visite" aria-labelledby="vs-t">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow mono">Venha conhecer</span>
+          <h2 id="vs-t">Rua Yokoama, 175</h2>
+        </div>
+        <p>Zona Norte de São Paulo, no Jardim Japão. Chame no WhatsApp antes para garantir seu horário.</p>
+      </div>
+      <div class="grid">
+        <div class="photo rv"><img src="img/fachada.jpg" alt="Fachada da 2B Estética Automotiva com um Porsche 911 azul na entrada" loading="lazy"></div>
+        <div class="card rv">
+          <dl>
+            <div><dt class="mono">Endereço</dt><dd>R. Yokoama, 175 — Jardim Japão<br>São Paulo · SP · 02132-140</dd></div>
+            <div><dt class="mono">WhatsApp e telefone</dt><dd><a href="https://wa.me/5511961000111" target="_blank" rel="noopener">(11) 96100-0111</a></dd></div>
+            <div><dt class="mono">Horário</dt><dd>Fecha às 19h</dd></div>
+          </dl>
+          <div class="map">
+            <iframe title="Mapa: R. Yokoama, 175 - Jardim Japão, São Paulo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=R.%20Yokoama%2C%20175%20-%20Jardim%20Jap%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002132-140&z=16&output=embed"></iframe>
+          </div>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=R.+Yokoama,+175+-+Jardim+Jap%C3%A3o,+S%C3%A3o+Paulo+-+SP,+02132-140" target="_blank" rel="noopener">Traçar rota no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="floor" aria-hidden="true"></div>
+
+  <!-- CTA FINAL -->
+  <section class="final" aria-labelledby="fn-t">
+    <div class="hex base" aria-hidden="true"></div>
+    <div class="wrap rv">
+      <h2 id="fn-t">Traga o seu.<br><span>A gente cuida.</span></h2>
+      <p>Mande uma foto do carro e o que você quer resolver. Respondemos com o serviço indicado e o orçamento.</p>
+      <div class="cta-row">
+        <a class="btn btn-signal" href="https://wa.me/5511961000111?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+5511961000111">Ligar (11) 96100-0111</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="brand" href="#topo"><img src="img/logo.jpg" alt="" style="width:36px;height:36px"><b style="font-size:18px">2B Estética Automotiva</b></a>
+    <span>R. Yokoama, 175 · Jardim Japão · São Paulo</span>
+    <a href="https://www.instagram.com/2bestetica/" target="_blank" rel="noopener">@2bestetica</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5511961000111?text=Ol%C3%A1%2C%20vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></svg>
+</a>
+
+<script>
+// nav background after scroll
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>40);
+onScroll();addEventListener('scroll',onScroll,{passive:true});
+
+// hex "inspection light" follows the pointer in the hero
+const hero=document.getElementById('hero');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){
+  let raf=0;
+  hero.addEventListener('pointermove',e=>{
+    cancelAnimationFrame(raf);
+    raf=requestAnimationFrame(()=>{
+      const r=hero.getBoundingClientRect();
+      hero.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      hero.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  });
+}
+
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// garage filters
+const btns=document.querySelectorAll('.filters button');
+const cards=document.querySelectorAll('#garage .wo');
+btns.forEach(b=>b.addEventListener('click',()=>{
+  btns.forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f;
+  cards.forEach(c=>{
+    const show=f==='all'||c.dataset.c.split(' ').includes(f);
+    c.classList.toggle('hide',!show);
+    if(show)c.classList.add('in');
+  });
+}));
+</script>
+</body>
+</html>
